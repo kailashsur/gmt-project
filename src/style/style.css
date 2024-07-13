@@ -1,0 +1,28 @@
+.custom-checkbox {
+    width: 24px;
+    height: 24px;
+    appearance: none;
+    background-color: #d1d5db; /* bg-gray-300 */
+    border-radius: 0.375rem; /* rounded-md */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .custom-checkbox:checked {
+    background-color: #FE8C00; /* Custom orange color */
+  }
+  
+  .custom-checkbox:checked::after {
+    font-weight: bold;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
