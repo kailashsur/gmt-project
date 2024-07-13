@@ -23,7 +23,7 @@ const Tracking = () => {
   const [speed, setSpeed] = useState(initialSpeed);
 
   return (
-    <div className='w-full h-screen flex flex-col justify-between items-center bg-cover bg-center transition-all duration-500 ease-in-out backdrop-blur-sm ' style={{ backgroundImage: 'url("./src/assets/background1.png") ' }}>
+    <div className='w-full h-screen flex flex-col justify-between items-center bg-cover bg-center transition-all duration-500 ease-in-out backdrop-blur-sm ' style={{ backgroundImage: 'url("/background1.png") ' }}>
       <div className='flex flex-col justify-between items-center w-full h-full backdrop-blur-[3px]'>
         <AnalogClock speed={speed} />
 

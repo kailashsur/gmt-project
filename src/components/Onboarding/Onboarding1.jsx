@@ -23,7 +23,7 @@ const Onboarding1 = ({ back, next, onboarding }) => {
 
 
   return (
-    <div className='w-full h-screen flex flex-col justify-end items-center p-10 bg-cover bg-center transition-all duration-500 ease-in-out' style={{ backgroundImage: 'url("./src/assets/background1.png") ' }}>
+    <div className='w-full h-screen flex flex-col justify-end items-center p-10 bg-cover bg-center transition-all duration-500 ease-in-out' style={{ backgroundImage: 'url("/background1.png") ' }}>
 
       {/* Background */}
       <div className=' w-[311px] h-[400px] rounded-[48px] flex flex-col items-center justify-between bg-[#FE8C00] text-white p-8'>

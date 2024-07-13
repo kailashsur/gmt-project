@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Success({logout}) {
     return (
-        <div className='w-full h-screen flex flex-col justify-end items-center bg-cover bg-center transition-all duration-500 ease-in-out' style={{ backgroundImage: 'url("./src/assets/background1.png") ' }}>
+        <div className='w-full h-screen flex flex-col justify-end items-center bg-cover bg-center transition-all duration-500 ease-in-out' style={{ backgroundImage: 'url("/background1.png") ' }}>
 
             {/* Background */}
             <div className=' relative w-full h-[50%] rounded-t-[24px] flex flex-col items-center  bg-[#FFFFFF] p-6'>
