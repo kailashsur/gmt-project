@@ -108,7 +108,7 @@ const Register = () => {
           <div>
 
             <label htmlFor="username">
-              <span className=' text-sm font-medium '>Email Address</span>
+              <span className=' text-sm font-medium '>Username</span>
             </label>
             <input
               className=' p-4 w-full rounded-lg border mt-2 font-medium  transition-all duration-500 ease-in-out '

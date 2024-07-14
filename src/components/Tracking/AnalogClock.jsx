@@ -63,7 +63,7 @@ const AnalogClock = ({ speed }) => {
   };
 
   return (
-    <div className=' w-full h-auto p-6 flex justify-center items-center flex-col gap-10' >
+    <div className=' w-full h-auto p-6 flex justify-center items-center flex-col gap-5' >
       {/* Watch */}
       <div className=' h-[300px] w-[300px] flex justify-center items-center shadow-white shadow-sm  rounded-full backdrop-blur-3xl'>
         <svg width={radius * 3} height={radius * 3}>
@@ -97,9 +97,13 @@ const AnalogClock = ({ speed }) => {
         </svg>
       </div>
 
+<div className=' bg-[#36363662] p-2 backdrop-blur-xl'>
       <p
-      className=' bg-white p-6 text-2xl font-bold'
-      >Time: {time.toLocaleTimeString()}</p>
+      className='text-xl font-extrabold text-white drop-shadow-base'
+      >{time.toLocaleTimeString()}</p>
+
+
+</div>
 
     </div>
   );

@@ -35,7 +35,7 @@ export default function Home() {
         {
             user?.accessToken ?
             <>
-            <Success logout={logout} />
+            <Success user={user} logout={logout} />
             {/* <Tracking /> */}
 
         </>

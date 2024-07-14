@@ -2,7 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-function Success({logout}) {
+function Success({user, logout}) {
+
+    
+
     return (
         <div className='w-full h-screen flex flex-col justify-end items-center bg-cover bg-center transition-all duration-500 ease-in-out' style={{ backgroundImage: 'url("/background1.png") ' }}>
 
