@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 
-const AnalogClock = ({ speed }) => {
+const ClockWise = () => {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime((prevTime) => new Date(prevTime.getTime() - 1000 * speed));
-    }, 1000 / speed);
+      setTime(new Date());
+    }, 1000);
     return () => clearInterval(interval);
-  }, [speed]);
+  }, []);
 
   const radius = 100;
   const center = { x: radius * 1.5, y: radius * 1.5 };
@@ -63,9 +63,9 @@ const AnalogClock = ({ speed }) => {
   };
 
   return (
-    <div className=" w-full h-auto p-6 flex justify-center items-center flex-col gap-5">
+    <div className="w-full h-auto p-6 flex justify-center items-center flex-col gap-5">
       {/* Watch */}
-      <div className=" h-[300px] w-[300px] flex justify-center items-center shadow-white shadow-sm  rounded-full backdrop-blur-3xl">
+      <div className="h-[300px] w-[300px] flex justify-center items-center shadow-white shadow-sm rounded-full backdrop-blur-3xl">
         <svg width={radius * 3} height={radius * 3}>
           <circle
             cx={center.x}
@@ -104,15 +104,13 @@ const AnalogClock = ({ speed }) => {
         </svg>
       </div>
 
-      {/* <div className=' bg-[#36363662] p-2 backdrop-blur-xl'>
-      <p
-      className='text-xl font-extrabold text-white drop-shadow-base'
-      >{time.toLocaleTimeString()}</p>
-
-
-</div> */}
+      <div className="bg-[#36363662] p-2 backdrop-blur-xl">
+        <p className="text-xl font-extrabold text-white drop-shadow-base">
+          {time.toLocaleTimeString()}
+        </p>
+      </div>
     </div>
   );
 };
 
-export default AnalogClock;
+export default ClockWise;
