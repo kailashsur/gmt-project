@@ -54,7 +54,7 @@ const CardStack = ({ height }) => {
           }}
         >
           <div
-            className={`relative rotate-180 w-60 ${height ? height : "h-60"}`}
+            className={`relative shadow-lg  rotate-180 w-60 ${height ? height : "h-60"}`}
           >
             <motion.div
               className={`absolute text-sm bg-white ${height ? height : "h-60"} w-60 md:h-60 md:w-96 rounded-3xl p-4 shadow-xl border border-neutral-200 shadow-black/[0.1] flex flex-col justify-between`}

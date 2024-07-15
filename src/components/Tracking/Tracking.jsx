@@ -27,22 +27,29 @@ const Tracking = () => {
       style={{ backgroundImage: 'url("/background1.png") ' }}
     >
       <div className="flex flex-col justify-between items-center w-full h-full ">
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{
-            type: "undamped",
-            stiffness: 500,
-            damping: 20,
-          }}
-        >
-          <AnalogClock speed={speed} />
-        </motion.div>
-        <div>
-          <CardStack height={"h-auto"} />
-        </div>
 
-        <div className="  w-full h-[40%] border-t rounded-t-[24px] flex flex-col justify-center  items-center backdrop-blur-3xl bg-white p-6 text-black shadow-md shadow-white">
+        {/* Top section */}
+        <div className=" flex flex-col justify-center items-center">
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{
+              type: "undamped",
+              stiffness: 500,
+              damping: 20,
+            }}
+          >
+            <AnalogClock speed={speed} />
+          </motion.div>
+
+          {/* Card stack  */}
+          <div>
+            <CardStack height={"h-auto"} />
+          </div>
+
+        </div>
+        {/* Button section */}
+        <div className="  w-full h-[30%] border-t rounded-t-[24px] flex flex-col justify-center  items-center backdrop-blur-3xl bg-white p-6 text-black shadow-md shadow-white">
           <Link to={"/"} className=" absolute top-6 left-6">
             <svg
               className="inline-block mr-2"
