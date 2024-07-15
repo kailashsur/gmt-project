@@ -10,7 +10,7 @@ const AnalogClock = ({ speed }) => {
     return () => clearInterval(interval);
   }, [speed]);
 
-  const radius = 100;
+  const radius = 80;
   const center = { x: radius * 1.5, y: radius * 1.5 };
   const hourAngle = (time.getHours() % 12) * 30 * (Math.PI / 180) - Math.PI / 2;
   const minuteAngle = time.getMinutes() * 6 * (Math.PI / 180) - Math.PI / 2;
@@ -63,9 +63,9 @@ const AnalogClock = ({ speed }) => {
   };
 
   return (
-    <div className=" w-full h-auto p-6 flex justify-center items-center flex-col gap-5">
+    <div className=" w-full h-auto p-2 flex justify-center items-center flex-col gap-5">
       {/* Watch */}
-      <div className=" h-[300px] w-[300px] flex justify-center items-center shadow-white shadow-sm  rounded-full backdrop-blur-3xl">
+      <div className="  flex justify-center items-center shadow-white shadow-sm  rounded-full backdrop-blur-3xl">
         <svg width={radius * 3} height={radius * 3}>
           <circle
             cx={center.x}

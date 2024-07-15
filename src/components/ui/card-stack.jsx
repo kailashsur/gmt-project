@@ -33,13 +33,13 @@ const isEmptyObject = (obj) => {
 const CardStack = ({ height }) => {
   const [cards, setCards] = useState({});
 
-  useEffect(() => {
-    const interval = setInterval(async () => {
-      setCards(await generate());
-    }, 5000);
+  // useEffect(() => {
+  //   const interval = setInterval(async () => {
+  //     setCards(await generate());
+  //   }, 5000);
 
-    return () => clearInterval(interval); // Cleanup the interval on component unmount
-  }, []);
+  //   return () => clearInterval(interval); // Cleanup the interval on component unmount
+  // }, []);
 
   return (
     <>

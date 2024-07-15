@@ -26,7 +26,7 @@ const Tracking = () => {
       className="w-full h-screen flex flex-col justify-between items-center bg-cover bg-center transition-all duration-500 ease-in-out backdrop-blur-sm  "
       style={{ backgroundImage: 'url("/background1.png") ' }}
     >
-      <div className="flex flex-col items-center w-full h-full ">
+      <div className="flex flex-col justify-between items-center w-full h-full ">
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
@@ -42,7 +42,7 @@ const Tracking = () => {
           <CardStack height={"h-auto"} />
         </div>
 
-        <div className=" absolute bottom-0 w-full h-[40%] border-t rounded-t-[24px] flex flex-col justify-center  items-center backdrop-blur-3xl bg-white p-6 text-black shadow-md shadow-white">
+        <div className="  w-full h-[40%] border-t rounded-t-[24px] flex flex-col justify-center  items-center backdrop-blur-3xl bg-white p-6 text-black shadow-md shadow-white">
           <Link to={"/"} className=" absolute top-6 left-6">
             <svg
               className="inline-block mr-2"

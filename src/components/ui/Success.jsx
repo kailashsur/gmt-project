@@ -6,7 +6,7 @@ import { Scale } from "@mui/icons-material";
 function Success({ user, logout }) {
   return (
     <div
-      className="w-full h-screen flex flex-col  items-center justify-end bg-cover bg-center transition-all duration-500 ease-in-out"
+      className="w-full h-full relative flex flex-col  items-center justify-end bg-cover bg-center transition-all duration-500 ease-in-out"
       style={{ backgroundImage: 'url("/background1.png") ' }}
     >
       {/* Background */}
